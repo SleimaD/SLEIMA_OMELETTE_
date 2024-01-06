@@ -54,3 +54,15 @@ let epicerie = {
     paniers : [{ type : "panier", contenu : [oignon,oeuf]  }]
 }
 
+let poele = {
+    nom : "poele",
+    contenu : [],
+
+    cuire() {
+        setTimeout(() => {
+            this.contenu[0].etats = "cuit";
+            console.log("c'est cuit");
+          }, 4000);
+    }
+}
+

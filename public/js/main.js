@@ -75,3 +75,37 @@ let bol = {
   
     }
 }
+
+
+personnage.seDeplacer(epicerie)
+
+personnage.mainDroite.push(epicerie.paniers[0])
+
+console.log(`${personnage.nom} a pris un panier`);
+
+for (let ingredient of epicerie.paniers[0].contenu) {
+    personnage.mainDroite.push({...ingredient})
+    console.log(`${personnage.nom} a pris ${ingredient.nom}`);
+    personnage.payerArticle(ingredient)
+}
+
+personnage.seDeplacer(maison)
+
+
+for (let ingredient of personnage.mainDroite.slice(1)) {
+    console.log(`ingredient(s) mis dans le bol.`);
+    bol.contenu.push(ingredient);
+}
+
+
+for (let ingredient of bol.contenu) {
+    personnage.couper(ingredient, couteau);
+}
+
+
+bol.melanger("omelette")
+
+
+poele.contenu = [...bol.contenu];
+bol.contenu = [];
+poele.cuire();

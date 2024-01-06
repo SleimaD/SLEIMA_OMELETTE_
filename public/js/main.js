@@ -30,3 +30,9 @@ let maison = {
     nom : "maison",
     personnes : []
 }
+
+let couteau = {
+    nom : "couteau",
+    action : "couper"
+}
+

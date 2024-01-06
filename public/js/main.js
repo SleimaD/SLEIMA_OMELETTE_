@@ -48,3 +48,9 @@ let oeuf = {
     prix : 1
 }
 
+let epicerie = {
+    nom : "epicerie",
+    personnes : [],
+    paniers : [{ type : "panier", contenu : [oignon,oeuf]  }]
+}
+

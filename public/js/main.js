@@ -36,3 +36,9 @@ let couteau = {
     action : "couper"
 }
 
+let oignon = {
+    nom : "oignon",
+    etat : "entier",
+    prix : 2
+}
+

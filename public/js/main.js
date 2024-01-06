@@ -25,3 +25,8 @@ let personnage = {
         }
     }
 }
+
+let maison = {
+    nom : "maison",
+    personnes : []
+}

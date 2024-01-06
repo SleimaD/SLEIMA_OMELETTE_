@@ -42,3 +42,9 @@ let oignon = {
     prix : 2
 }
 
+let oeuf = {
+    nom : "oeuf",
+    etat : "entier",
+    prix : 1
+}
+

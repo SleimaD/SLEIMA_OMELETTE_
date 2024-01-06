@@ -66,3 +66,12 @@ let poele = {
     }
 }
 
+let bol = {
+    contenu : [],
+
+    melanger(nomDuMelange) {
+        this.contenu = [{ nom: nomDuMelange, etats: 'pas cuit', prix: 0 }];
+        console.log(`Nouveau mélange: ${nomDuMelange}`);
+  
+    }
+}
